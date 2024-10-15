@@ -1,5 +1,7 @@
 package andrea;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.IntegerProperty;
@@ -12,8 +14,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 /**
  * JavaFX App
@@ -34,8 +34,8 @@ public class Ejercicio1 extends Application {
         // Etiqueta que muestra el valor del contador
         Label label = new Label();
         Label label2 = new Label();
-
         label.textProperty().bind(Bindings.concat("Contador: ", contador.asString()));
+
         // Botón para incrementar el contador
         Button boton = new Button("Incrementar");
         boton.setOnAction(e -> contador.set(contador.get() + 1));
