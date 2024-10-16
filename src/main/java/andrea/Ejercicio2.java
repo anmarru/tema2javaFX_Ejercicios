@@ -40,9 +40,13 @@ public class Ejercicio2 extends Application{
 
         Button botonDecrementar= new Button("-");
         botonDecrementar.setOnAction(e->{
-            //elimino ultimo elemento
-            contadorList.remove(contadorList.size()-1);
+            if(!contadorList.isEmpty()){
+                //elimino ultimo elemento
+                contadorList.remove(contadorList.size()-1);
+                contador.set(contador.get()-1); 
+            } 
         });
+
 
         VBox root= new VBox(10,label,listView ,botonIncremetar, botonDecrementar);
         Scene scene= new Scene(root,200,200);
