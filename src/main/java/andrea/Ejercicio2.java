@@ -31,6 +31,9 @@ public class Ejercicio2 extends Application{
 
         //boton para añadir a la lista
         Button botonIncremetar= new Button("+");
+
+        botonIncremetar.setId("botonIncrementar");//asigno el id al boton 
+
         botonIncremetar.setOnAction(e->{
             //incrementa contador
             contador.set(contador.get()+1);
@@ -39,6 +42,9 @@ public class Ejercicio2 extends Application{
         });
 
         Button botonDecrementar= new Button("-");
+
+        botonDecrementar.setId("botonDecrementar");//asigno id al boton
+
         botonDecrementar.setOnAction(e->{
             if(!contadorList.isEmpty()){
                 //elimino ultimo elemento
@@ -50,6 +56,9 @@ public class Ejercicio2 extends Application{
 
         VBox root= new VBox(10,label,listView ,botonIncremetar, botonDecrementar);
         Scene scene= new Scene(root,200,200);
+
+        //estilo css
+        scene.getStylesheets().add(getClass().getResource("/estilo.css").toExternalForm());
 
          // Configuración del Stage
         primaryStage.setScene(scene);

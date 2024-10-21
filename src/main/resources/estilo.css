@@ -1,0 +1,45 @@
+/* Fondo de la aplicación */
+.root {
+    -fx-background-color: #989b50;
+}
+
+/* Estilo general para los botones */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 14px;
+}
+
+/* Estilo hover para los botones */
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Estilo para el botón de incrementar */
+#botonIncrementar {
+    -fx-background-color: #2ecc71;
+}
+
+#botonIncrementar:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* Estilo para el botón de decrementar */
+#botonDecrementar {
+    -fx-background-color: #e74c3c; /* Color de fondo */
+}
+
+#botonDecrementar:hover {
+    -fx-background-color: #c0392b; /* Color cuando se pasa el mouse */
+}
+
+/* Estilo del ListView */
+.list-view {
+    -fx-background-color: rgb(233, 218, 86);
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
